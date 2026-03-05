@@ -1,0 +1,15 @@
+## Week 1 — Day 1 (March 5, 2026)
+
+### Task: Vendor Data Cleaning Pipeline
+**Concepts covered:** Python functions, dict manipulation, string methods,
+type coercion, try/except, boolean conversion, list filtering
+
+**DataStage parallel:** NULL handling via ISNULL/COALESCE in SQL procedures,
+REPLACE for hidden chars and blanks — same logic, Python syntax is
+`try/except`, `str().strip()`, and `or 0` patterns
+
+**What clicked:** vendor_dict.copy() to avoid mutating original data.
+One-liner boolean: `str(val).strip().lower() == 'yes'`
+
+**What was hard:** Remembering to return the list from the function.
+In DataStage the output is implicit — in Python you have to be explicit.
